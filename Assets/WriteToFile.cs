@@ -21,21 +21,17 @@ public class WriteToFile : MonoBehaviour
     public GameObject prefabButton;
     public RectTransform ParentPanel;
 
-    void OnGUI()
+    public void ordenado()
     {
-        GUIStyle buttonStyle = new GUIStyle(GUI.skin.button);
-        buttonStyle.fontSize = 25;
-        if(GUI.Button(new Rect(10,10,450,80),"Send Information to File",buttonStyle))
-        {
-            StartCoroutine(sendTextToFile());
-        }
-        if (GUI.Button(new Rect(10, 100, 450, 80), "Get Information from File", buttonStyle))
-        {
-            StartCoroutine(getTextFromFile());
-        }
+        StartCoroutine(getTextFromFileOrdenado());
     }
 
-    [System.Obsolete]
+    public void aleatorio()
+    {
+        StartCoroutine(getTextFromFile());
+    }
+
+[System.Obsolete]
     IEnumerator sendTextToFile()
     {
         bool successful = true;
@@ -53,6 +49,32 @@ public class WriteToFile : MonoBehaviour
         {
             Debug.Log(www.text);
             successful = true;
+        }
+    }
+
+    IEnumerator getTextFromFileOrdenado()
+    {
+        bool successful = true;
+
+        WWWForm form = new WWWForm();
+        WWW www = new WWW("https://illegitimate-wardro.000webhostapp.com/tounityOrdenado.php", form);
+
+        yield return www;
+        if (www.error != null)
+        {
+            successful = false;
+        }
+        else
+        {
+            Debug.Log(www.text);
+            successful = true;
+
+            string myString = www.text;
+            string[] myStringSplit = myString.Split(';');
+
+            gerarNumeros(myStringSplit);
+
+            
         }
     }
 
@@ -78,15 +100,13 @@ public class WriteToFile : MonoBehaviour
 
             gerarNumeros(myStringSplit);
 
-            //Debug.Log(myStringSplit[0]);
-            //Debug.Log(myStringSplit[1]);
+           
         }
     }
 
     public void gerarNumeros(string []myString)
     {
         
-
         for(int i = 0; i < myString.Length; ++i)
         {
             string valor = myString[i];

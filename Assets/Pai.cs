@@ -38,6 +38,14 @@ public class Pai : MonoBehaviour
         a.GetComponent<Image>().color = Color.cyan;
     }
 
+    public IEnumerator excluir(float tempo, Button a)
+    {
+        yield return new WaitForSecondsRealtime(tempo);
+        a.GetComponent<Image>().color = Color.gray;
+    }
+
+
+
     public IEnumerator troca(float tempo, Button a, Button b)
     {
         yield return new WaitForSecondsRealtime(tempo);
