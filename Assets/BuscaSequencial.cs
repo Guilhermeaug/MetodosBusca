@@ -8,7 +8,7 @@ public class BuscaSequencial : Pai
     
     public RectTransform ParentPanel;
     public InputField alvo;
-    private float tempo = 2;
+    private float tempo = 1;
 
     public void buscaSequencial()
     {

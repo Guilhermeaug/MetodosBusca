@@ -8,12 +8,18 @@ public class StaticValue : MonoBehaviour
     static private int intervaloInicio, intervaloFim, qtd;
     static private string metodo;
 
-    
+
+    public void Start()
+    {
+        
+    }
+
     public void lerIntervaloInicio(string alvo)
     {
         
         intervaloInicio = int.Parse(alvo);
         //Debug.Log(intervaloInicio);
+        Debug.Log("ok");
     }
 
     public void lerIntervaloFim(string alvo)

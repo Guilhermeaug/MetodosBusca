@@ -19,7 +19,7 @@ public class BuscaBinaria : Pai
 
     public RectTransform ParentPanel;
     public InputField alvo;
-    private float tempo = 3;
+    private float tempo = 1.5f;
 
     public void buscaBinaria(int max)
     {
