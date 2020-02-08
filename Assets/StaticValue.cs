@@ -31,6 +31,11 @@ public class StaticValue : MonoBehaviour
     public void lerQuantidade(string alvo)
     {
         qtd = int.Parse(alvo);
+
+        if(qtd > 120)
+        {
+            qtd = 120;
+        }
         //Debug.Log(qtd);
     }
 

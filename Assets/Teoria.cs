@@ -26,9 +26,10 @@ public class Teoria : MonoBehaviour
 
     void imprimeTexto(string metodo)
     {
+        txt.color = Color.white;
         if (metodo == "btnSequencial")
         {
-            txt.text = "O método de busca sequencial começa no elemento mais a esquerda do vetor e" +
+            txt.text = "O método de busca sequencial começa no elemento mais à esquerda do vetor e" +
                 " compara elemento a elemento se o valor do mesmo bate com o valor desejado.";
 
         }
@@ -36,7 +37,7 @@ public class Teoria : MonoBehaviour
         {
             txt.text = "O método de busca binária busca um valor no array através de múltiplas divisões " +
                 "do intervalo de pesquisa. Se o valor a ser procurado é menor que o elemento que está no meio do intervalo" +
-                ", reduza o intervalo para a metade inferior. Caso contrário, reduza para a metade superior. " +
+                ", o intervalo é reduzido para a metade inferior. Caso contrário, o intervalo é reduzido para a metade superior. " +
                 "Isso é realizado repetidamente até que o valor desejado seja encontrado.  ";
 
         }
