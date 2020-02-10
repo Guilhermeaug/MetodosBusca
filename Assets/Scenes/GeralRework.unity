@@ -419,7 +419,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Total de numeros
+  m_Text: "Total de n\xFAmeros"
 --- !u!222 &405121121
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -983,7 +983,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 56.937}
+  m_SizeDelta: {x: 0, y: 81.5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1059220801
 MonoBehaviour:
@@ -1010,7 +1010,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 49
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1855,7 +1855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2 - Teoria do Algoritmo
+  m_Text: "2 - M\xE9todo escolhido"
 --- !u!222 &1883611100
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed2b5406aa67ada45a4921a1f7e4222c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level0: NumerosGerados
+  level0: Teoria
 --- !u!61 &1954847204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2590,7 +2590,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1 - M\xE9todo Escolhido"
+  m_Text: 1 - Teoria do algoritmo
 --- !u!222 &2118826876
 CanvasRenderer:
   m_ObjectHideFlags: 0
